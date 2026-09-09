@@ -1,0 +1,7 @@
+# Credenciais
+.env
+
+# Editor / SO
+*.swp
+*.swo
+.DS_Store
