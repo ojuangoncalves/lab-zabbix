@@ -28,5 +28,14 @@ services:
     ports:
       - "8080:8080"
 
+  grafana:
+    container_name: grafana
+    image: grafana/grafana:13.2.1
+    ports:
+      - "3000:3000"
+    volumes:
+      - grafana-data:/var/lib/grafana
+
 volumes:
   postgres-data:
+  grafana-data:
